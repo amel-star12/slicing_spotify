@@ -23,6 +23,15 @@ body {
     display: flex; 
     justify-content: space-between; 
     align-items: center; }
+.logo, .auth-buttons {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.sidebar.hide-on-scroll .logo,
+.topbar.hide-on-scroll .auth-buttons {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-16px);
+}
 .logo-img { 
     width: 28px; 
     height: 28px; 

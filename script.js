@@ -58,6 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar");
     const openBtn = document.getElementById("open-menu");
     const closeBtn = document.getElementById("close-menu");
+    const mainView = document.querySelector(".main-view");
+    const topbar = document.querySelector(".topbar");
+    let lastScrollTop = 0;
+
+    mainView.addEventListener("scroll", () => {
+        const currentScrollTop = mainView.scrollTop;
+
+        if (currentScrollTop > lastScrollTop && currentScrollTop > 20) {
+            sidebar.classList.add("hide-on-scroll");
+            topbar.classList.add("hide-on-scroll");
+        } else if (currentScrollTop < lastScrollTop) {
+            sidebar.classList.remove("hide-on-scroll");
+            topbar.classList.remove("hide-on-scroll");
+        }
+
+        lastScrollTop = currentScrollTop;
+    });
 
     openBtn.addEventListener("click", () => {
         sidebar.classList.add("active");
