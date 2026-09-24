@@ -18,7 +18,7 @@ Screnshoot Mobile:
 <img width="164" height="350" alt="image" src="https://github.com/user-attachments/assets/dcb8533c-f1b7-4b57-8086-1238b6000d57" />
 
 Screnshoot Tablet:
-<img width="197" height="259" alt="image" src="https://github.com/user-attachments/assets/460860cb-e236-44ea-bf36-fee38b7d2917" /> <img width="193" height="260" alt="image" src="https://github.com/user-attachments/assets/7733f6e7-9422-4750-b2f1-f3a1457a3da1" />
+<img width="260" height="350" alt="image" src="https://github.com/user-attachments/assets/255de3e7-5225-4d2c-9cd8-538c398151f2" />  <img width="193" height="260" alt="image" src="https://github.com/user-attachments/assets/7733f6e7-9422-4750-b2f1-f3a1457a3da1" />
 
 
 Screnshoot Desktop:
