@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <img src="assets/spotify.png" alt="Spotify" class="logo-img">
+                <h2>Spotify</h2>
+                <button id="close-menu" class="mobile-only">&times;</button>
+            </div>
+            <ul class="nav-links">
+                <li>Beranda</li>
+                <li>Cari</li>
+                <li>Koleksi Kamu</li>
+            </ul>
+        </aside>
+
+        <main class="main-view">
+            <header class="topbar">
+                <div class="menu-toggle">
+                    <button id="open-menu" class="mobile-only">&#9776;</button>
+                </div>
+                <div class="auth-buttons">
+                    <button class="signup">Daftar</button>
+                    <button class="login">Masuk</button>
+                </div>
+            </header>
+
+            <div class="content-section">
+                <h2>Populer</h2>
+                <div class="card-container" id="playlist-container">
+                    <!-- Cards disisipkan melalui JS -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="playback-bar">
+            <div class="now-playing">
+                <h4 id="current-title">Pilih Lagu</h4>
+                <p id="current-artist">-</p>
+            </div>
+            <div class="player-controls">
+                <span>⏮</span> 
+                <button id="play-pause-btn" class="play-btn">▶</button> 
+                <span>⏭</span>
+            </div>
+            <div class="volume-controls">
+                <span>🔈 Volume</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
