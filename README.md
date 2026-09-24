@@ -1,5 +1,5 @@
 Deskripsi Web:
-Website ini adalah tiruan (clone) antarmuka Spotify sederhana yang menampilkan daftar lagu populer dalam bentuk card. 
+Website ini adalah slicing Spotify sederhana yang menampilkan daftar lagu populer dalam bentuk card. 
 Di sini, pengguna bisa berinteraksi langsung seperti memilih lagu, melihat informasi judul dan artis di bagian player, 
 mengoperasikan menu navigasi saat dibuka lewat HP (tampilan mobile), serta mencoba tombol play dan pause yang interaktif.
 
