@@ -176,6 +176,10 @@ body {
         grid-template-rows: minmax(0, 1fr) 90px;
         height: 100dvh;
     }
+    .main-view {
+        margin: 0;
+        padding-bottom: 90px;
+    }
     .sidebar { 
         position: fixed; 
         top: 0; 
@@ -211,12 +215,28 @@ body {
     .auth-buttons button { 
         padding: 10px 20px; }
     .now-playing { width: 30%; }
+    .now-playing {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+    .player-controls {
+        flex: 0 0 auto;
+        gap: 16px;
+    }
     .now-playing h4, .now-playing p { 
         white-space: nowrap; 
         overflow: hidden; 
         text-overflow: ellipsis; }
     .volume-controls { display: none; }
     .playback-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: env(safe-area-inset-bottom, 0px);
+        z-index: 200;
+        height: 90px;
         min-height: 90px;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
     }
 }
