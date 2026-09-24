@@ -60,9 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("close-menu");
     const mainView = document.querySelector(".main-view");
     const topbar = document.querySelector(".topbar");
+    const mobileView = window.matchMedia("(max-width: 768px)");
     let lastScrollTop = 0;
 
     mainView.addEventListener("scroll", () => {
+        if (!mobileView.matches) {
+            sidebar.classList.remove("hide-on-scroll");
+            topbar.classList.remove("hide-on-scroll");
+            return;
+        }
+
         const currentScrollTop = mainView.scrollTop;
 
         if (currentScrollTop > lastScrollTop && currentScrollTop > 20) {

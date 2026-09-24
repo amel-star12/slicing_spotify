@@ -26,12 +26,6 @@ body {
 .logo, .auth-buttons {
     transition: opacity 0.25s ease, transform 0.25s ease;
 }
-.sidebar.hide-on-scroll .logo,
-.topbar.hide-on-scroll .auth-buttons {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-16px);
-}
 .logo-img { 
     width: 28px; 
     height: 28px; 
@@ -167,6 +161,13 @@ body {
 
 /* Responsive Media*/
 @media (max-width: 768px) {
+    .sidebar.hide-on-scroll .logo,
+    .topbar.hide-on-scroll .auth-buttons {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-16px);
+    }
+
     .app-container { grid-template-columns: 1fr; }
     .sidebar { 
         position: fixed; 
